@@ -1,0 +1,50 @@
+      section.career {
+        display: flex;
+        background-color: #f0f0f0;
+      }
+
+      article {
+        flex: 1 30%;
+      }
+
+      article:nth-of-type(2) {
+        flex: 1 60%;
+        display: flex;
+        flex-flow: column;
+      }
+
+
+      .middle {
+/*        flex: 1 50%;*/
+        display: flex;
+        flex-flow: row;
+      }
+
+/*      div {
+        margin: none;
+        padding: none;
+      }*/
+
+      .careers-advice {
+        width: 50%;
+      }
+
+      .careers-advice img {
+        width: 100%;
+      }
+
+      .bottom {
+      /*  flex: 1 50%;*/
+        display: flex;
+        flex-flow: row;
+      }
+
+      .careers-piece figure {
+        width: 100%;
+      }
+
+      .careers-piece figure img {
+        width: 100%;
+        margin: none;
+        padding: none;
+      }

@@ -1,0 +1,59 @@
+.flex {
+	display: flex;
+	flex-flow: row || wrap;
+	justify-content: center;
+
+}
+
+/*.main {
+	width: 60%;
+	display: flex;
+	flex-flow: column || nowrap;
+	flex: 1;
+}*/
+
+/*LAYOUT*/
+
+.three-column {
+	width: 27%;
+	margin: 4% 1%;
+}
+
+.wide {
+	width: 70%;
+/*	margin-top: 0.3em;*/
+}
+
+.narrow {
+	width: 30%;
+/*	margin-top: 0.3em;*/
+	/*margin-left: 0.8em;*/
+}
+
+/*.narrow a {
+	
+}
+
+.wide a {
+
+}*/
+
+.centered {
+	text-align: center;
+}
+
+.right-align {
+	float: right;
+}
+
+.left-align {
+	float: left;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.half-width {
+	width: 45%;
+}

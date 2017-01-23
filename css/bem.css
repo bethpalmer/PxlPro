@@ -1,0 +1,118 @@
+/************
+
+This style sheet is written in BEM
+
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier / .block--modifier
+
+************/
+
+/* BLOCKS *****************************************************************/
+
+.all {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #343535;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row || wrap;
+	justify-content: center;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	box-shadow: 0px 0px 10px #47a3d6;
+}
+
+/* ELEMENTS ***************************************************************/
+
+.header__small {
+	height: 25px;
+	background: #1079be;
+	/*padding-top: 0;*/
+	margin: 0;
+	line-height: 22px;
+}
+
+.header__big {
+	height: 75px;
+	background: white;
+}
+
+.header__narrow {
+	width: 20%;
+	position: relative;
+	left: 20px;
+}
+
+.header__wide {
+	width: 70%;
+	position: relative;
+	right: 20px;
+}
+
+.header__nav {
+	list-style-type: none;
+	float: right;
+}
+
+.header__nav-item {
+	display: inline-block;
+}
+
+.header__link {
+	color: white;
+	font-size: 10px;
+	text-decoration: none;
+	padding: 0 1em;
+}
+
+.header__logo {
+	max-height: 55px;
+	padding: 10px 0px;
+}
+
+
+/* MODIFIERS **************************************************************/
+
+.header__logo:hover {
+	max-height: 65px;
+	padding: 5px 0px;
+}
+
+.header__link:hover {
+	color: #343535;
+}
+
+.header__link--left {
+	float: left;
+}
+
+.header__link--main {
+	color: #343535;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.header__link--main:hover {
+	background-color: #1079be;
+	color: white;
+	padding: 1em;
+	-moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+
