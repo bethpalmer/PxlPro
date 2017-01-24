@@ -11,6 +11,11 @@ Modifier = .block__element--modifier / .block--modifier
 /* BLOCKS *****************************************************************/
 
 .all {
+	margin: 0;
+	padding: 0;
+}
+
+.text {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #343535;
@@ -31,12 +36,27 @@ Modifier = .block__element--modifier / .block--modifier
 	box-shadow: 0px 0px 10px #47a3d6;
 }
 
+.footer {
+	width: 100%;
+	background-color: #343535;
+}
+
+.search {
+	background: black;
+	position: relative;
+	margin-top: 100px;
+	width: 100%;
+}
+
+.links {
+
+}
+
 /* ELEMENTS ***************************************************************/
 
 .header__small {
 	height: 25px;
 	background: #1079be;
-	/*padding-top: 0;*/
 	margin: 0;
 	line-height: 22px;
 }
@@ -79,8 +99,121 @@ Modifier = .block__element--modifier / .block--modifier
 	padding: 10px 0px;
 }
 
+.footer__big {
+	height: 75px;
+	border-bottom: 0.5px solid white;
+}
+
+.footer__small {
+	height: 25px;
+	width: 100%;
+}
+
+.footer__wide {
+	width: 70%;
+	position: relative;
+	left: 20px;
+}
+
+.footer__narrow {
+	width: 20%;
+	right: 20px;
+}
+
+.footer__nav {
+	list-style-type: none;
+	float: left;
+}
+
+.footer__nav-item {
+	display: inline-block;
+}
+
+.footer__link {
+	color: white;
+	text-decoration: none;
+	font-size: 1em;
+	line-height: 50px;
+	padding: 0 1em;
+}
+
+/*Attempt to reuse footer__link, footer__nav, footer__nav-item in footer__small did not work well
+with unexpected padding etc. Ended up using dedicated classes for footer__small*/
+
+/*This requires padding of 8px on left for some reason. 20px left on footer__narrow should have been sufficient?*/
+.footer__info {
+	color: white;
+	float: left;
+	padding-left: 8px;
+	padding-top: 2px;
+}
+
+/*This requires a 40px margin on right, where I would expect it to need 20px?*/
+.footer__nav-social {
+	list-style-type: none;
+	float: right;
+	margin-top: 0px;
+	margin-right: 40px;
+}
+
+/*li*/
+.footer__social {
+	list-style-type: none;
+	float: right;
+}
+
+ /*images*/
+.footer__social-img {
+	height: 15px;
+	padding: 5px 0.5em;
+	float: right;
+}
+
+.search__img {
+	width: 100%;
+	opacity: 0.7;
+}
+
+.search__text {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	color: white;
+	width: 100%;
+}
+
+.search__input {
+	position: absolute;
+	bottom: 0px;
+	height: 100px;
+	width: 100%;
+}
+
+.flex__three-column {
+	width: 27%;
+	margin: 4% 1%;
+}
 
 /* MODIFIERS **************************************************************/
+
+.text--big-title {
+	font-size: 2em;
+	text-align: center;
+}
+
+.text--small-title {
+
+}
+
+.text--medium-text {
+	font-size: 1em;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.text--right {
+
+}
 
 .header__logo:hover {
 	max-height: 65px;
@@ -92,7 +225,7 @@ Modifier = .block__element--modifier / .block--modifier
 }
 
 .header__link--left {
-	float: left;
+
 }
 
 .header__link--main {
@@ -114,5 +247,17 @@ Modifier = .block__element--modifier / .block--modifier
     border-radius: 5px 5px 5px 5px;
 }
 
+.search__input--full-width {
+	width: 100%;
+}
+
+.search__input--half-width {
+	width: 45%;
+}
+
+.search__input--background {
+	background-color: #343535;
+	opacity: 0.6;
+}
 
 

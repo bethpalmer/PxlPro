@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="css/bem.css">
 	<!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
 </head>
-<body class="all">
+
+<!---Apply styles from blocks all and text to all content-->
+<body class="all text">
 	<header class="header">
     
     <div class="header__small flex">
@@ -41,37 +43,50 @@
         </ul>
       </nav>
     </div>
-	</header>
 	
-	<!-- <section id="search">
-    <img src="img/hero.png" alt="woman using laptop in a borad room">
-    <div class="search centered">
-      <h2>Search 1,570 jobs.<h2>
-      <h6>Hundreds of new career opportunities each day. Find your perfect job.</h6>
+  </header>
+	
+	<section class="search">
+    
+    <img class="search__img" src="img/hero.png" alt="woman using laptop in a borad room">
+    
+    <div class="search__text">
+      <h1 class="text--big-title">Search 1,570 jobs.</h1>
+      <h1 class="text--medium-text">Hundreds of new career opportunities each day. Find your perfect job.</h1>
     </div>  
-    <div class="search-bar flex">
-      <div class="three-column">
-        <input class="full-width" type="text" name="keyword" value="Keyword (e.g. Manager)">
+    
+    <div class="search__input search__input--background">
+<!--- Empty div so that the opacity value doesnt affect the rest of the elements overlaying this-->   
+    </div>
+
+    <div class="search__input flex">
+
+      <div class="flex__three-column">
+        <input class="search__input--full-width" type="text" name="keyword" value="Keyword (e.g. Manager)">
       </div>
-      <div class="three-column">
-        <input class="full-width" type="text" name="location" value="Location (e.g. Boston)">
+    
+      <div class="flex__three-column">
+        <input class="search__input--full-width" type="text" name="location" value="Location (e.g. Boston)">
       </div>
-      <div class="three-column">
-        <select class="half-width" name="distance">
-          <option value="5">Within 5 miles</option>
+    
+      <div class="flex__three-column">
+        <select class="search__input--half-width" name="distance">
           <option value="10">Within 10 miles</option>
           <option value="25">Within 25 miles</option>
           <option value="50">Within 50 miles</option>
+          <option value="100">Within 100 miles</option>
         </select>
-        <input class="half-width" type="submit" value="Search">
+        <input class="search__input--half-width" type="submit" value="Search">
       </div>
+    
     </div>
-	</section> -->
 
- <!--  <section id="links" class="flex">
+	</section>
 
-      <div class="three-column">
-        <h3>Browse jobs by sector</h3>
+  <section class="links flex">
+
+      <div class="flex__three-column">
+        <h1 class="text--small-title">Browse jobs by sector</h1>
         <ul>
           <li><a href="#">Accountancy &amp; Finance</a></li>
           <li><a href="#">Architecture, Building &amp; Planning</a></li>
@@ -83,8 +98,8 @@
         </ul>
       </div>
 
-      <div class="three-column">
-        <h3><a class="right-align" href="#">view all >></a></h3>
+      <div class="flex__three-column">
+        <h1><a class="text--right" href="#">view all >></a></h1>
         <br><br>
         <ul>
           <li><a href="#">Education</a></li>
@@ -97,8 +112,8 @@
         </ul>
       </div>
       
-      <div class="three-column">
-        <h3>Featured jobs <a class="right-align" href="#">view all jobs >></a></h3>
+      <div class="flex__three-column">
+        <h1 class="text--small-title">Featured jobs <a class="text--right" href="#">view all jobs >></a></h1>
         <img class="jobs" src="img/_jobs/microsoft.png" alt="microsoft logo">
         <aside class="jobs">
           <p><a href="#">Business Systems Analyst</a>
@@ -118,7 +133,7 @@
           <br>Up to $100,000</p>
         </aside>
       </div>
-  </section> -->
+  </section>
 	
 <!-- 	<section>
     <div id="cta" class="flex">
@@ -238,30 +253,40 @@
   </section> -->
 
 
-	<!-- <footer>
-    <div class="big-nav">
-      <nav>
-        <ul>
-          <li><a href="#">Browse jobs</a></li>
-          <li><a href="#">Search employers</a></li>
-          <li><a href="#">Terms &amp; conditions</a></li>
-          <li><a href="#">Policy</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
+	<footer class="footer">
+    
+    <nav class="footer__big">
+      <ul class="footer__nav">
+        <li class="footer__nav-item"><a class="footer__link" href="#">Browse jobs</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="#">Search employers</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="#">Terms &amp; conditions</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="#">Policy</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="#">About us</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="#">Contact us</a></li>
+      </ul>
+    </nav>
+    
+    <div class="footer__small flex">
+      <div class="footer__narrow">
+        <a class="footer__info">&copy; 2017. Powered by Magdex</a>
+      </div>
+      <nav class="footer__wide">
+        <ul class="footer__small footer__nav-social">
+          <li class="footer__social">
+            <a href="#">
+              <img class="footer__social-img" src="img/_social/Facebook.svg" alt="facebook icon"></a></li>
+          <li class="footer__social">
+            <a class="footer__social" href="#">
+              <img class="footer__social-img" src="img/_social/Twitter.svg" alt="twitter icon"></a></li>
+          <li class="footer__social">
+            <a class="footer__social" href="#">
+              <img class="footer__social-img" src="img/_social/GooglePlus.svg" alt="google plus icon"></a></li>
+          <li class="footer__social">
+            <a href="#">
+              <img class="footer__social-img" src="img/_social/LinkedIn.svg" alt="linked in icon"></a></li>
         </ul>
       </nav>
     </div>
-    <div class="small-nav">
-      <h6>&copy; 2017. Powered by Magdex</h6>
-      <nav>
-        <ul class="right-align">
-          <li><img src="img/_social/Facebook.svg" alt="facebook icon"></li>
-          <li><img src="img/_social/Twitter.svg" alt="twitter icon"></li>
-          <li><img src="img/_social/GooglePlus.svg" alt="google plus icon"></li>
-          <li><img src="img/_social/LinkedIn.svg" alt="linked in icon"></li>
-        </ul>
-      </nav>
-    </div>
-	</footer> -->
+	</footer>
 </body>
 </html>
