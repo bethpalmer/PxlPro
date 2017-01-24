@@ -83,6 +83,7 @@
 
 	</section>
 
+<!---TODO nummber at end of link-->
   <section class="links flex">
 
       <div class="flex__three-column">
@@ -186,105 +187,72 @@
         <li class="employers__list-item"><img class="employers__img" src="img/_employers/oracle.png" alt="Oracle logo"></li>
       </ul>
     </div>
-     <!--  <div class="employers__title">
-        <h1 class="text--small-title">Featured employers</h1>
-      </div> -->
-      
-     <!--  <div class="employers__list">
-        <img class="employers__img employers__img--l" src="img/_employers/citi.png" alt="Citi logo">
-        <img class="employers__img employers__img--r" src="img/_employers/agstar.png" alt="Agstar logo">
-      </div>
-    
-    </div>
-
-    <div class="flex__three-column"> -->
-   
-<!--       <div class="employers__title">
-
-      </div>
- -->
-     <!--  <div class="employers__list">
-        <img class="employers__img employers__img--l" src="img/_employers/ford.png" alt="Ford logo">
-        <img class="employers__img employers__img--r" src="img/_employers/ioxus.png" alt="Ioxus logo">
-      </div>
-
-    </div>
-      
-    <div class="flex__three-column"> -->
-
-<!--       <div class="employers__list">
-        <h1 class="text--small-title"><a class="text--link text--right" href="#">View all employers >></a></h1>
-      </div> -->
-
-   <!--    <div class="employers__list">
-        <img class="employers__img employers__img--l" src="img/_employers/nike.png" alt="Nike logo">
-        <img class="employers__img employers__img--r" src="img/_employers/oracle.png" alt="Oracle logo">
-      </div>
-    
-    </div> -->
-
-<!--     <div>
-      <h3>Featured employers<a class="right-align" href="#">View all employers >></a></h3>
-      <img src="img/_employers/citi.png" alt="Citi logo">
-      <img src="img/_employers/agstar.png" alt="Agstar logo">
-      <img src="img/_employers/ford.png" alt="Ford logo">
-      <img src="img/_employers/ioxus.png" alt="Ioxus logo">
-      <img src="img/_employers/nike.png" alt="Nike logo">
-      <img src="img/_employers/oracle.png" alt="Oracle logo">
-    </div> -->
   </section>
 
-<!-- <section class="career">
-      <article>
-        <div class="LTop">
-          <img src="img/mpu.png">
+<section class="career flex">
+      <!---Displaying both the ad and the ad-ad at the same width as it feels slightly easier on the eye-->
+      <aside class="career__ads">
+        <img class="career__advert" src="img/mpu.png">
+        <img class="career__advertise-here" src="img/advertise-bg.png">
+        <div class="career__overlay">
+       <!--  <div class-"career__overlay"> -->
+          <div class="career__overlay-text">
+            <h1 class="text--small-title text--white">Advertise with us</h1>
+            <ul class="career__ad-list">
+              <li class="career__ad-list-item text--standard text--white">Post jobs and monitor your applications</li>
+              <li class="career__ad-list-item text--standard text--white">Search our extenisve candidate database</li>
+              <li class="career__ad-list-item text--standard text--white">Filter applications with screening questions</li>
+            </ul>
+            <!---Styled the button as half width of div rather than third as it seems easier on the eye-->
+            <input class="search__input--half-width button" type="submit" value="Post a job">
+          </div>
         </div>
-        <div class="LBottom">
-          <img src="img/advertise-bg.png">
-        </div>
-      </article>
+      </aside>
 
-      <article>
-        <div class="top">
-          <span>Careers advice<a class="right-align">View all articles >></a></span>
+      <article class="career__advice">
+
+        <div class="career__title">
+          <h1 class="text--small-title">Careers advice<a class="text--link text--right">View all articles >></a></h1>
         </div>
-        <div class="middle">
-          <div class="careers-advice">
-            <img src="img/_careers-advice/article1.png">
+        
+        <div class="career__main-flex">
+          <div class="career__main">
+            <img class="career__main--img" src="img/_careers-advice/article1.png" alt="Woman using smartphone">
           </div>
-          <div class="careers-advice">
-            <h4>An introduction into ecommerce and the mobile revolution</h4>
-            <p>There are many ways to market  a product or a service and providing the potential clients and customers with testimonials is one of the best</p>
+          <div class="career__main">
+            <h1 class="text--medium-title">An introduction into ecommerce and the mobile revolution</h1>
+            <p class="text--standard">There are many ways to market  a product or a service and providing the potential clients and customers with testimonials is one of the best</p>
           </div>
         </div>
-        <div class="bottom">
-          <div class="careers-piece">
-            <figure>
-              <img src="img/_careers-advice/article2.png" alt="">
-              <figcaption>The pros and cons of taking a digital detox in the modern age</figcaption>
+        
+        <div class="career__secondary-flex">
+    <!--       <div> -->
+            <figure class="career__article">
+              <img class="career__article--img" src="img/_careers-advice/article2.png" alt="Mountain scene">
+              <figcaption class="text--link-bold">The pros and cons of taking a digital detox in the modern age</figcaption>
             </figure>
-          </div>
-          <div class="careers-piece">
-            <figure>
-              <img src="img/_careers-advice/article3.png" alt="">
-              <figcaption>Why should your company value user experience research?</figcaption>
+   <!--        </div>
+          <div class="career__article"> -->
+            <figure class="career__article">
+              <img class="career__article--img" src="img/_careers-advice/article3.png" alt="Glasses on a laptop on a table">
+              <figcaption class="text--link-bold">Why should your company value user experience research?</figcaption>
             </figure>
-          </div>
-          <div class="careers-piece">
-            <figure>
-              <img src="img/_careers-advice/article4.png" alt="">
-              <figcaption>We're in the age of big data. But it's what you do with it that matters</figcaption>
+     <!--      </div>
+          <div class="career__article"> -->
+            <figure class="career__article">
+              <img class="career__article--img" src="img/_careers-advice/article4.png" alt="Close up partial view of a laptop">
+              <figcaption class="text--link-bold">We're in the age of big data. But it's what you do with it that matters</figcaption>
             </figure>
-          </div>
-          <div class="careers-piece">
-            <figure>
-              <img src="img/_careers-advice/article5.png" alt="">
-              <figcaption>Industry focus: A look inside invasion's studio in California</figcaption>
+       <!--    </div>
+          <div class="career__article"> -->
+            <figure class="career__article">
+              <img class="career__article--img" src="img/_careers-advice/article5.png" alt="Woman working at a laptop">
+              <figcaption class="text--link-bold">Industry focus: A look inside invasion's studio in California</figcaption>
             </figure>
-          </div>
+        <!--   </div> -->
         </div>
       </article>
-    </section> -->
+    </section>
 
  <!--  <section>
     <div class="flex">

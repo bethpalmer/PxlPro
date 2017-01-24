@@ -67,6 +67,13 @@ Modifier = .block__element--modifier / .block--modifier
 	padding: 5% 0;
 }
 
+.career {
+	background-color: #f0f0f0;
+	width: 100%;
+	padding: 3em 0;
+/*	padding: 0 5%;*/
+}
+
 .button {
 	background: #f12e58;
 	color: white;
@@ -302,6 +309,98 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	border: 2px solid #f0f0f0;
 }
 
+/*aside*/
+.career__ads {
+	/*flex: 1 10%;*/
+	width: 25%;
+	position: relative;
+	/*left: 4%;*//*
+	margin: 3em;*/
+	display: inline-block;
+}
+
+.career__advert {
+	/*text-align: center;*/
+	width: 95%;
+	margin: 1em;
+}
+
+.career__advertise-here {
+	width: 95%;
+	margin: 1em;
+/*	background: black;
+	opacity: 0.3;*/
+}
+
+.career__overlay {
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	width: 95%;
+	height: 39.5%;
+	background: #343535;
+	opacity: 0.7;
+	/*padding: 1em;*/
+}
+
+.career__overlay-text {
+	padding: 2em 1em;
+}
+
+.career__ad-list {
+	padding-left: 1em;	
+}
+
+.career__ad-list-item {
+	padding-bottom: 0.5em;
+	padding-left: 0; 
+}
+
+/*article*/
+.career__advice {
+	/*flex-basis: 60%;*/
+	/*flex: 1 40%;*/
+	width: 60%;
+    display: flex;
+    flex-flow: column;
+/*    position: relative;*/
+   /* right: 5%;*/
+   	display: inline-block;
+   	padding: 1em;
+}
+
+.career__title {
+	height: 1em;
+	margin-bottom: 1.7em;
+	margin-left: 1em;
+/*	width: 100%;*/
+}
+
+.career__main-flex {
+	display: flex;
+    flex-flow: row;
+    /*width: 60%;*/
+}
+
+.career__main {
+	width: 50%;
+	margin: 1em;
+}
+
+.career__secondary-flex {
+	display: flex;
+    flex-flow: row;
+    /*width: 60%;*/
+}
+
+/*figure*/
+.career__article {
+	width: 100%;
+	display: inline-block;
+	margin: 1em;
+}
+
+
 /* MODIFIERS **************************************************************/
 
 .text--big-title {
@@ -309,8 +408,15 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	text-align: center;
 }
 
+.text--medium-title {
+	font-size: 1.2em;
+	color: #47a3d6;
+	-webkit-margin-before: 0;
+}
+
 .text--small-title {
 	font-size: 1em;
+	-webkit-margin-before: 0;
 	/*line-height: 2em;*/
 }
 
@@ -331,11 +437,13 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	font-size: 1em;
 }
 
-/*.text--link-header {
-	line-height: 2em;
-	margin-bottom: 0.8em;
-	width: 100%;
-}*/
+.text--link-bold {
+	text-decoration: none;
+	color: #47a3d6;
+	font-size: 1em;
+	line-height: 1.6em;
+	font-weight: bold;
+}
 
 .text--standard {
 	margin-top: 0;
@@ -346,9 +454,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .text--white {
 	color: white;
 }
-/*.text--header {
-	line-height: 1em;
-}*/
 
 .header__logo:hover {
 	max-height: 65px;
@@ -390,6 +495,10 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .search__input--half-width {
 	width: 45%;
 }
+/*
+.search__input--third-width {
+	width: 33%;
+}*/
 
 .search__input--background {
 	background-color: #343535;
@@ -408,10 +517,19 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	float: right;
 }
 
-.employers__img--l {
+/*.employers__img--l {
 	float: left;
 }
 
 .employers__img--r {
 	float: right;
+}*/
+
+.career__main--img {
+	width: 100%;
+/*	margin: 1em;*/
+}
+
+.career__article--img {
+	width: 100%;
 }
