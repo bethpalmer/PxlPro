@@ -50,6 +50,7 @@ Modifier = .block__element--modifier / .block--modifier
 
 .links {
 	background-color: #f0f0f0;
+	margin-bottom: 1em;
 }
 
 /* ELEMENTS ***************************************************************/
@@ -194,6 +195,11 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	margin: 4% 1%;
 }
 
+.links__title {
+	height: 1em;
+	margin-bottom: 1em;
+}
+
 /*ul*/
 .links__list {
 	list-style-type: none;
@@ -207,7 +213,9 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 }
 
 .links__jobs {
-	margin-bottom: 1em;
+	margin-bottom: 0.8em;
+/*	position: absolute;
+	top: 10% + 42px;*/
 }
 
 /* MODIFIERS **************************************************************/
@@ -219,10 +227,10 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 .text--small-title {
 	font-size: 1em;
-	line-height: 2em;
+	/*line-height: 2em;*/
 }
 
-.text--medium-text {
+.text--medium {
 	font-size: 1em;
 	font-weight: lighter;
 	text-align: center;
@@ -239,11 +247,11 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	font-size: 1em;
 }
 
-.text--link-header {
+/*.text--link-header {
 	line-height: 2em;
 	margin-bottom: 0.8em;
 	width: 100%;
-}
+}*/
 
 .text--standard {
 	margin-top: 0;
@@ -303,7 +311,7 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .links__jobs--img {
 	width: 35%;
 	float: left;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.2em;
 }
 
 .links__jobs--text {
