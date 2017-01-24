@@ -53,6 +53,20 @@ Modifier = .block__element--modifier / .block--modifier
 /*	margin-bottom: 1em;*/
 }
 
+.cta {
+	background: url(../img/_ctas/cta-bg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+}
+
+.employers {
+	background-color: white;
+	width: 100%;
+	padding: 5% 0;
+}
+
 .button {
 	background: #f12e58;
 	color: white;
@@ -76,19 +90,16 @@ Modifier = .block__element--modifier / .block--modifier
 	padding-left: 5px;
 }
 
-.cta {
-	background: url(../img/_ctas/cta-bg.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	width: 100%;
-	height: auto;
-}
-
 /* ELEMENTS ***************************************************************/
 
 .flex__three-column {
 	width: 27%;
 	margin: 3% 1%;
+}
+
+.flex__six-column {
+	width: 13%;
+	margin: 1% 1%;
 }
 
 .header__small {
@@ -267,6 +278,30 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	width: 100%;
 }
 
+.employers__title {
+	height: 1em;
+	margin-bottom: 1em;
+	padding: 0 10%;
+}
+
+/*ul*/
+.employers__list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*li*/
+.employers__list-item {
+	display: inline-block;
+}
+
+.employers__img {
+	width: 10em;
+	margin: 0.7em;
+	border: 2px solid #f0f0f0;
+}
+
 /* MODIFIERS **************************************************************/
 
 .text--big-title {
@@ -370,5 +405,13 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .links__jobs--text {
 	width: 60%;
 	margin-left: 1em;
+	float: right;
+}
+
+.employers__img--l {
+	float: left;
+}
+
+.employers__img--r {
 	float: right;
 }
