@@ -49,7 +49,7 @@ Modifier = .block__element--modifier / .block--modifier
 }
 
 .links {
-
+	background-color: #f0f0f0;
 }
 
 /* ELEMENTS ***************************************************************/
@@ -194,6 +194,22 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	margin: 4% 1%;
 }
 
+/*ul*/
+.links__list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*li*/
+.links__list-item {
+	line-height: 2em;
+}
+
+.links__jobs {
+	margin-bottom: 1em;
+}
+
 /* MODIFIERS **************************************************************/
 
 .text--big-title {
@@ -202,7 +218,8 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 }
 
 .text--small-title {
-
+	font-size: 1em;
+	line-height: 2em;
 }
 
 .text--medium-text {
@@ -212,8 +229,31 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 }
 
 .text--right {
-
+	float: right;
 }
+
+/*<a>*/
+.text--link {
+	text-decoration: none;
+	color: #47a3d6;
+	font-size: 1em;
+}
+
+.text--link-header {
+	line-height: 2em;
+	margin-bottom: 0.8em;
+	width: 100%;
+}
+
+.text--standard {
+	margin-top: 0;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+
+/*.text--header {
+	line-height: 1em;
+}*/
 
 .header__logo:hover {
 	max-height: 65px;
@@ -260,4 +300,14 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	opacity: 0.6;
 }
 
+.links__jobs--img {
+	width: 35%;
+	float: left;
+	margin-bottom: 1.5em;
+}
 
+.links__jobs--text {
+	width: 60%;
+	margin-left: 1em;
+	float: right;
+}
