@@ -50,7 +50,7 @@ Modifier = .block__element--modifier / .block--modifier
 
 .links {
 	background-color: #f0f0f0;
-	margin-bottom: 1em;
+/*	margin-bottom: 1em;*/
 }
 
 .button {
@@ -76,7 +76,20 @@ Modifier = .block__element--modifier / .block--modifier
 	padding-left: 5px;
 }
 
+.cta {
+	background: url(../img/_ctas/cta-bg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+}
+
 /* ELEMENTS ***************************************************************/
+
+.flex__three-column {
+	width: 27%;
+	margin: 3% 1%;
+}
 
 .header__small {
 	height: 25px;
@@ -213,11 +226,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	width: 100%;
 }
 
-.flex__three-column {
-	width: 27%;
-	margin: 3% 1%;
-}
-
 .links__title {
 	height: 1em;
 	margin-bottom: 1em;
@@ -239,6 +247,24 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	margin-bottom: 0.8em;
 /*	position: absolute;
 	top: 10% + 42px;*/
+}
+
+.cta__block {
+	background-color: #343535;
+	opacity: 0.75;
+	max-width: 250px;
+	height: 140px;
+	z-index: 0;
+	padding: 2em;
+}
+
+.cta__centered {
+	text-align: center;
+}
+
+.cta__img {
+	max-height: 3em;
+	width: 100%;
 }
 
 /* MODIFIERS **************************************************************/
@@ -282,6 +308,9 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	line-height: 1.5em;
 }
 
+.text--white {
+	color: white;
+}
 /*.text--header {
 	line-height: 1em;
 }*/
