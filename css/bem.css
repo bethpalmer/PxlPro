@@ -53,6 +53,23 @@ Modifier = .block__element--modifier / .block--modifier
 	margin-bottom: 1em;
 }
 
+.button {
+	background: #f12e58;
+	color: white;
+	border-radius: 5px;
+	border: 0;
+	width: 80px;
+    height:25px;
+}
+
+/*Remove rounded corners whilst keeping arrows*/
+.dropdown {
+	border: 0px;
+	outline: 1px inset black;
+	outline-offset: -1px;
+	margin-right: 1.3em;
+}
+
 /* ELEMENTS ***************************************************************/
 
 .header__small {
@@ -297,10 +314,12 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 .search__input--full-width {
 	width: 100%;
+	height: 2em;
 }
 
 .search__input--half-width {
 	width: 45%;
+	height: 30px;
 }
 
 .search__input--background {
