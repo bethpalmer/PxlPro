@@ -23,7 +23,7 @@ Modifier = .block__element--modifier / .block--modifier
 
 .flex {
 	display: flex;
-	flex-flow: row || wrap;
+	flex-flow: row wrap;
 	justify-content: center;
 }
 
@@ -210,8 +210,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 .links__jobs {
 	margin-bottom: 0.8em;
-/*	position: absolute;
-	top: 10% + 42px;*/
 }
 
 .cta__absolute {
@@ -261,18 +259,15 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 /*aside*/
 .career__ads {
-	/*flex: 1 10%;*/
+/*	flex: 1 1 10%;*/
 	display: flex;
     flex-flow: column;
 	width: 25%;
 	position: relative;
-	/*left: 4%;*//*
-	margin: 3em;*/
 	display: inline-block;
 }
 
 .career__advert {
-	/*text-align: center;*/
 	width: 95%;
 	margin: 1em;
 }
@@ -286,19 +281,9 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 }
 
 .career__overlay {
-/*	position: absolute;
-	bottom: 1em;
-	left: 1em;*/
-	/*width: 95%;*/
-	/*height: 39.5%;*/
 	background: #343535;
 	opacity: 0.7;
-	/*padding: 1em;*/
 }
-
-/*.career__overlay-text {
-	margin: 2em 1em;
-}*/
 
 .career__ad-list {
 	list-style-type: none;
@@ -312,13 +297,9 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 /*article*/
 .career__advice {
-	/*flex-basis: 60%;*/
-	/*flex: 1 40%;*/
 	width: 60%;
     display: flex;
     flex-flow: column;
-/*    position: relative;*/
-   /* right: 5%;*/
    	display: inline-block;
    	padding: 1em;
 }
@@ -328,7 +309,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	height: 1em;
 	margin-bottom: 1.7em;
 	margin-left: 1em;
-/*	width: 100%;*/
 }
 
 .career__content {
@@ -339,7 +319,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .career__main-flex {
 	display: flex;
     flex-flow: row;
-    /*width: 60%;*/
 }
 
 .career__main {
@@ -350,7 +329,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .career__secondary-flex {
 	display: flex;
     flex-flow: row;
-    /*width: 60%;*/
 }
 
 /*figure*/
@@ -412,18 +390,18 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 /* MODIFIERS **************************************************************/
 
 .flex--three-column {
-	width: 27%;
+	flex: 0 1 27%;
 	margin: 3% 1%;
 }
 
 .flex--three-column-cta {
-	width: 30%;
+	flex: 0 1 30%;
 	margin-left: 1%;
 	margin-right: 1%;
 }
 
 .flex--three-column-our {
-	width: 24%;
+	flex: 0 1 24%;
 	margin: 3% 1%;
 }
 
@@ -441,7 +419,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 .text--small-title {
 	font-size: 1em;
-	/*-webkit-margin-before: 0;*/
 	margin-bottom: 1.5em;
 	font-weight: bolder;
 }
@@ -458,7 +435,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	font-size: 1em;
 	font-weight: lighter;
 	line-height: 1.6em;
-/*	text-align: center;*/
 }
 
 .text--right {
@@ -486,6 +462,13 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 }
 
 .text--standard {
+	margin-top: 0;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-weight: lighter;
+}
+/*Needed for media query*/
+.text--small {
 	margin-top: 0;
 	font-size: 0.9em;
 	line-height: 1.5em;
@@ -569,11 +552,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	right: 20px;
 }
 
-/*.header__logo:hover {
-	max-height: 65px;
-	padding: 5px 0px;
-}*/
-
 .footer--big {
 	height: 75px;
 	border-bottom: 0.5px solid white;
@@ -603,10 +581,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .search__input--half-width {
 	width: 45%;
 }
-/*
-.search__input--third-width {
-	width: 33%;
-}*/
 
 .search__input--background {
 	background-color: #343535;
@@ -618,12 +592,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	float: left;
 	margin-bottom: 1.2em;
 }
-
-/*.links__jobs--img {
-	width: 100%;
-	vertical-align: middle;
-	display: inline-block;
-}*/
 
 .links__jobs--text {
 	width: 50%;
@@ -657,7 +625,6 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	bottom: 0;
 	left: 2em;
 	width: 85%;
-	/*max-height: 85%;*/
 }
 
 .employers__img:hover,
