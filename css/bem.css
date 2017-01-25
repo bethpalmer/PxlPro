@@ -516,6 +516,13 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	line-height: 1.5em;
 }
 
+.text--postscript {
+	font-size: 0.7em;
+	color: #acacac;
+	display: inline;
+	padding-left: 1em;
+}
+
 .text--white {
 	color: white;
 }
