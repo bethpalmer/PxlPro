@@ -1,0 +1,132 @@
+@media (max-width: 1050px) {
+	.cta {
+		height: 260px;
+	}	
+}
+
+@media (max-width: 950px) {
+	.text--link-header-main {
+		font-size: 0.9em;
+	}
+	.text--link-footer {
+		font-size: 0.9em;
+	}
+	/*.cta__absolute {
+		top: 5%;
+	}*/
+	.cta {
+		height: 240px;
+	}
+	.cta__block--opaque {
+		margin-top: 2%;
+	}
+}
+
+@media (max-width: 881px) {
+	.text--link-header-main {
+		font-size: 0.8em;
+	}
+	.text--link-footer {
+		font-size: 0.8em;
+	}
+	.text--link-nav {
+		padding: 0 0.7em;
+	}
+	.cta {
+		height: 200px;
+	}
+	.cta__absolute {
+	/*	top: 15%;*/
+		height: 55%;
+	}
+	.cta__block {
+		padding: 0 0.5em;
+	}
+	.cta__block--opaque {
+		margin-top: 1%;
+	}
+	.cta__img {
+		max-height: 1.5em;
+		width: 100%;
+		margin-bottom: 0.5em;
+	}
+	.text--small-title {
+		/*font-size: 1em;*/
+		margin-bottom: 1em;
+	}
+/*	.career__advice {
+	    display: flex;
+	    flex-flow: row;
+	}*/
+	.career__content {
+		display: flex;
+	    flex-flow: row;
+	}
+	.career__main-flex {
+		display: flex;
+	    flex-flow: column;
+	    width: 100%;
+	}
+	.career__secondary-flex {
+		display: flex;
+	    flex-flow: column;
+	}
+	.career__main {
+		width: 100%;
+		margin: 0;
+	}
+	.career__article {
+		margin-top: 0;
+	}
+	.career__article--img {
+		width: 50%;
+		float: left;
+	}
+	.career__article--text {
+		width: 45%;
+		float: right;
+		margin-left: 1em;
+	}
+	.text--link-bold {
+		font-size: 0.9em;
+	}
+	.text--medium-title {
+		font-size: 1em;
+	}
+	.text--medium {
+		font-size: 0.9em;
+	}
+	.text--small-title {
+		font-size: 0.9em;
+		margin-bottom: 1.2em;
+	}
+	.text--standard {
+	/*	margin-top: 0;*/
+		font-size: 0.8em;
+	/*	line-height: 1.2em;
+		font-weight: lighter;*/
+	}
+	.links__list-item {
+		line-height: 1.8em;
+	}
+	.text--link {
+		font-size: 0.9em;
+	}
+	.career__advertise-here {
+		/*margin-top: 30px;*/
+		height: 50%;
+	}
+/*	.career__advert {
+		text-align: center;
+		width: 95%;
+		margin: 1em;
+	}*/
+	.career__ads {
+/*		display: flex;
+	    flex-flow: column;
+		width: 25%;
+		position: relative;
+		display: inline-block;*/
+		height: auto;
+	}
+}
