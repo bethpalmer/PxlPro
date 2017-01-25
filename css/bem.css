@@ -58,7 +58,8 @@ Modifier = .block__element--modifier / .block--modifier
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: auto;
+	height: 310px;
+	position: relative;
 }
 
 .employers {
@@ -107,97 +108,30 @@ Modifier = .block__element--modifier / .block--modifier
 
 /* ELEMENTS ***************************************************************/
 
-.flex__three-column {
-	width: 27%;
-	margin: 3% 1%;
-}
-
-.flex__six-column {
-	width: 13%;
-	margin: 1% 1%;
-}
-
-.header__small {
-	height: 25px;
-	background: #1079be;
-	margin: 0;
-	line-height: 22px;
-}
-
-.header__big {
-	height: 75px;
-	background: white;
-}
-
-.header__narrow {
-	width: 20%;
-	position: relative;
-	left: 20px;
-}
-
-.header__wide {
-	width: 70%;
-	position: relative;
-	right: 20px;
-}
-
 .header__nav {
 	list-style-type: none;
 	float: right;
+	margin-top: 0.8em;
 }
 
 .header__nav-item {
 	display: inline-block;
 }
 
-.header__link {
-	color: white;
-	font-size: 10px;
-	text-decoration: none;
-	padding: 0 1em;
-}
-
 .header__logo {
 	max-height: 55px;
-	padding: 10px 0px;
-}
-
-.footer__big {
-	height: 75px;
-	border-bottom: 0.5px solid white;
-}
-
-.footer__small {
-	height: 25px;
-	width: 100%;
-}
-
-.footer__wide {
-	width: 70%;
-	position: relative;
-	left: 20px;
-}
-
-.footer__narrow {
-	width: 20%;
-	right: 20px;
+	padding: 10px 0.6em;
 }
 
 .footer__nav {
 	list-style-type: none;
 	float: left;
+	position: relative;
+	left: 40px;
 }
 
 .footer__nav-item {
 	display: inline-block;
-}
-
-.footer__link {
-	color: white;
-	text-decoration: none;
-	font-size: 1em;
-	line-height: 50px;
-	padding: 0 1em;
 }
 
 /*Attempt to reuse footer__link, footer__nav, footer__nav-item in footer__small did not work well
@@ -207,7 +141,7 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .footer__info {
 	color: white;
 	float: left;
-	padding-left: 8px;
+	/*padding-left: 8px;*/
 	padding-top: 2px;
 }
 
@@ -248,7 +182,7 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .search__input {
 	position: absolute;
 	bottom: 0px;
-	height: 100px;
+	height: 25%;
 	width: 100%;
 }
 
@@ -269,28 +203,35 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	line-height: 2em;
 }
 
+.links__flex {
+	display: flex;
+    flex-flow: column;
+}
+
 .links__jobs {
 	margin-bottom: 0.8em;
 /*	position: absolute;
 	top: 10% + 42px;*/
 }
 
-.cta__block {
-	background-color: #343535;
-	opacity: 0.75;
-	max-width: 250px;
-	height: 140px;
-	z-index: 0;
-	padding: 2em;
+.cta__absolute {
+	width: 100%;
+	position: absolute;
+	top: 15%;
+	height: 60%;
 }
 
-.cta__centered {
-	text-align: center;
+.cta__block {
+	max-width: 250px;
+	height: 100%;
+	z-index: 0;
+	padding: 0 1em;
 }
 
 .cta__img {
-	max-height: 3em;
+	max-height: 2em;
 	width: 100%;
+	margin-bottom: 1em;
 }
 
 .employers__title {
@@ -309,17 +250,20 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 /*li*/
 .employers__list-item {
 	display: inline-block;
+	width: 12%;
+	margin: 0.7em;
 }
 
 .employers__img {
-	width: 10em;
-	margin: 0.7em;
+	width: 100%;
 	border: 2px solid #f0f0f0;
 }
 
 /*aside*/
 .career__ads {
 	/*flex: 1 10%;*/
+	display: flex;
+    flex-flow: column;
 	width: 25%;
 	position: relative;
 	/*left: 4%;*//*
@@ -335,28 +279,33 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 .career__advertise-here {
 	width: 95%;
-	margin: 1em;
+/*	margin: 1em;*/
+	position: absolute;
+	bottom: 1em;
+	left: 1em;
+	height: 39.5%;
 /*	background: black;
 	opacity: 0.3;*/
 }
 
 .career__overlay {
-	position: absolute;
+/*	position: absolute;
 	bottom: 1em;
-	left: 1em;
-	width: 95%;
-	height: 39.5%;
+	left: 1em;*/
+	/*width: 95%;*/
+	/*height: 39.5%;*/
 	background: #343535;
 	opacity: 0.7;
 	/*padding: 1em;*/
 }
 
-.career__overlay-text {
-	padding: 2em 1em;
-}
+/*.career__overlay-text {
+	margin: 2em 1em;
+}*/
 
 .career__ad-list {
-	padding-left: 1em;	
+	list-style-type: none;
+	padding-left: 0;	
 }
 
 .career__ad-list-item {
@@ -426,6 +375,7 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 .our__download-text {
 	float: left;
 	width: 50%;
+	color: #343535;
 }
 
 .our__download-img {
@@ -458,6 +408,22 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 /* MODIFIERS **************************************************************/
 
+.flex--three-column {
+	width: 27%;
+	margin: 3% 1%;
+}
+
+.flex--three-column-cta {
+	width: 30%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.flex--three-column-our {
+	width: 24%;
+	margin: 3% 1%;
+}
+
 .text--big-title {
 	font-size: 2em;
 	text-align: center;
@@ -472,8 +438,9 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 
 .text--small-title {
 	font-size: 1em;
-	-webkit-margin-before: 0;
-	/*line-height: 2em;*/
+	/*-webkit-margin-before: 0;*/
+	margin-bottom: 1.5em;
+	font-weight: bolder;
 }
 
 .text--big {
@@ -502,6 +469,11 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	font-size: 1em;
 }
 
+.text--link:hover,
+.text--link-bold:hover {
+	color: #1079be;
+}
+
 .text--link-bold {
 	text-decoration: none;
 	color: #47a3d6;
@@ -514,6 +486,7 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	margin-top: 0;
 	font-size: 0.9em;
 	line-height: 1.5em;
+	font-weight: lighter;
 }
 
 .text--postscript {
@@ -527,27 +500,37 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	color: white;
 }
 
-.header__logo:hover {
-	max-height: 65px;
-	padding: 5px 0px;
+.text--link-nav {
+	color: white;
+	text-decoration: none;
+	padding: 0 1em;
 }
 
-.header__link:hover {
+.text--link-header {
+	font-size: 10px;
+}
+
+.text--link-header:hover {
 	color: #343535;
 }
 
-.header__link--left {
-
+.text--link-footer {
+	font-size: 1em;
+	line-height: 50px;
 }
 
-.header__link--main {
+.text--link-footer:hover {
+	color: #47a3d6;
+}
+
+.text--link-header-main {
 	color: #343535;
 	font-size: 1em;
 	font-weight: bold;
 	line-height: 50px;
 }
 
-.header__link--main:hover {
+.text--link-header-main:hover {
 	background-color: #1079be;
 	color: white;
 	padding: 1em;
@@ -557,6 +540,56 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
     -moz-border-radius-bottomleft: 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
+}
+
+.header--small {
+	height: 25px;
+	background: #1079be;
+	margin: 0;
+	line-height: 22px;
+}
+
+.header--big {
+	height: 75px;
+	background: white;
+}
+
+.header--narrow {
+	width: 20%;
+	position: relative;
+	left: 14px;
+}
+
+.header--wide {
+	width: 70%;
+	position: relative;
+	right: 20px;
+}
+
+/*.header__logo:hover {
+	max-height: 65px;
+	padding: 5px 0px;
+}*/
+
+.footer--big {
+	height: 75px;
+	border-bottom: 0.5px solid white;
+}
+
+.footer--small {
+	height: 25px;
+	width: 100%;
+}
+
+.footer--wide {
+	width: 50%;
+	position: relative;
+	left: 20px;
+}
+
+.footer--narrow {
+	width: 40%;
+	right: 20px;
 }
 
 .search__input--full-width {
@@ -583,25 +616,45 @@ with unexpected padding etc. Ended up using dedicated classes for footer__small*
 	margin-bottom: 1.2em;
 }
 
+/*.links__jobs--img {
+	width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}*/
+
 .links__jobs--text {
-	width: 60%;
+	width: 50%;
 	margin-left: 1em;
 	float: right;
 }
 
-/*.employers__img--l {
-	float: left;
+.cta--centered {
+	text-align: center;
 }
 
-.employers__img--r {
-	float: right;
-}*/
-
-.career__main--img {
-	width: 100%;
-/*	margin: 1em;*/
+.cta__block--transparency {
+	background-color: #343535;
+	opacity: 0.75;
 }
 
+.cta__block--opaque {
+	margin-top: 3%;
+}
+
+.career__main--img,
 .career__article--img {
 	width: 100%;
 }
+
+.career__overlay--text {
+	bottom: 0;
+	left: 2em;
+	width: 85%;
+	/*max-height: 85%;*/
+}
+
+.employers__img:hover,
+.links__jobs--img:hover {
+	box-shadow: 1px 1px 15px #e4f3fc;
+}
+
